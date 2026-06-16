@@ -1,5 +1,10 @@
 # kasm-parsec
- Parsec for Kasm Workspaces
- 
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/shishkabob27/kasm-parsec/latest) 
-![Docker Pulls](https://img.shields.io/docker/pulls/shishkabob27/kasm-parsec)
+
+![Tags](https://ghcr-badge.egpl.dev/reinforcezwei/kasm-parsec/tags)
+![Image Size](https://ghcr-badge.egpl.dev/reinforcezwei/kasm-parsec/size) 
+
+Parsec for Kasm Workspaces. Forked from [shishkabob27/kasm-parsec](https://github.com/shishkabob27/kasm-parsec) and updated base image becuase Parsec complains the OS version too old.
+
+```sh
+docker pull ghcr.io/reinforcezwei/kasm-parsec:1.17.0
+```
