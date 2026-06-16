@@ -38,6 +38,7 @@ jobs:
         id: tags
         run: |
           IMAGE="${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}"
+          IMAGE="${IMAGE,,}"
           TAGS="${IMAGE}:latest,${IMAGE}:${{ steps.sha.outputs.short }}"
           if [ -n "${{ inputs.tag }}" ]; then
             TAGS="${TAGS},${IMAGE}:${{ inputs.tag }}"
